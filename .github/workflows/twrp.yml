@@ -1,26 +1,26 @@
 name: Building Twrp
-
+Building
 on:
   workflow_dispatch:
 
 env:
   # (required) twrp manifest 
-  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
   # (required) manifest branch 
-  BRANCH: twrp-11
+  BRANCH: twrp-9.0
   # (required) device codename i.e: sweet mojito.. 
-  DEVICE: m10lte
+  DEVICE: a7pro
   # (required) device tree link with branch if exists
-  DT_LINK: https://github.com/SA-17/m10
+  DT_LINK: https://github.com/Newkid24/android_device_umidigi_A7_Pro
   # (required) who made your phone ? 
-  MANUFACTURER: samsung
+  MANUFACTURER: umidigi
   # (required) recovery partiton = recovery, else (no recovery partition): boot 
   TARGET: recovery
   # dont change that
   IMAGE: image
   # (required) depend of device tree if you see twrp_"codename".mk use twrp
   # else (omni_"codename".mk): omni
-  OT: twrp
+  OT: omni
   # dont change that
   SYM: _
   # (required) output format for some reason samsung phones need a custom mkbootimg
