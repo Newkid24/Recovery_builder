@@ -9,7 +9,7 @@ env:
   # (required) manifest branch 
   BRANCH: twrp-9.0
   # (required) device codename i.e: sweet mojito.. 
-  DEVICE: a7pro
+  DEVICE: A7_Pro
   # (required) device tree link with branch if exists
   DT_LINK: https://github.com/Newkid24/android_device_umidigi_A7_Pro
   # (required) who made your phone ? 
